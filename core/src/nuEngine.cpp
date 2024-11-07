@@ -31,7 +31,7 @@ void nuEngine::init() {
     }
 
     {
-        nuWindowBuilder windowBuilder;
+        nuWindowBuilder windowBuilder = nuWindowBuilder(_physicalDevice, _device, _surface, _swapchainExtent);
         nuWindowBuild_ret build = windowBuilder.build();
         _swapchain = build.swapchain;
         _swapchainImageFormat = build.swapchain_image_format;

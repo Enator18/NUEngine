@@ -48,7 +48,7 @@ add_definitions(-DGLM_FORCE_DEPTH_ZERO_TO_ONE)
 set(STB_IMAGE_INCLUDE_DIR ${EXTERNAL}/stb_image)
 target_include_directories(nu-core PUBLIC ${STB_IMAGE_INCLUDE_DIR})
 
-add_subdirectory(${EXTERNAL}/vkbootstrap)
+add_subdirectory(${EXTERNAL}/vk-bootstrap)
 target_link_libraries(nu-core PUBLIC vk-bootstrap::vk-bootstrap)
 
 set(VMA_INCLUDE_DIR ${EXTERNAL}/vma)
